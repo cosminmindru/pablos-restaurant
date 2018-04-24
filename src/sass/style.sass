@@ -1,27 +1,32 @@
 // GENERAL
 body
 	margin: 0
+a
+	color: #fff
+	text-decoration: none
+	&:active, &:hover
+		color: #B69B77
 
 // Mixins
 $navbar-index: 300
 $content-index: 100
 
-=special-font
-	font-family: 'Satisfy', cursive
-
-=regular-font
-	font-family: 'Lato', sans-serif
-
 // OOCSS Classes
 .flex
 	display: flex
+
+.special-font
+	font-family: 'Satisfy', cursive
+
+.regular-font
+	font-family: 'Lato', sans-serif
 
 .hover-content
 	max-width: 1000px
 	min-height: 500px
 	margin-top: -50px
 	margin-bottom: -50px
-	background: red
+	background: #fff
 	flex-wrap: wrap
 
 .hover-background
@@ -50,7 +55,11 @@ $content-index: 100
 			width: calc(50% - 20px)
 			display: flex
 			text-align: left
+			h3
+				text-transform: uppercase
 
+=std-transition
+	transition: all 0.2s ease-in-out	
 
 // NAVBAR
 .navbar
@@ -58,32 +67,29 @@ $content-index: 100
 	flex-direction: row
 	justify-content: space-between
 	align-items: center
-	height: 60px
-	padding: 0 50px
-	background: white
+	height: 80px
+	width: 100%
+	background: rgba(0,0,0,0.5)
+	position: fixed
 	.nav-logo
-		margin: 0
-		background: blue
+		margin-left: 2em
+		a img
+			height: 60px
 	.nav-menu
-		background: yellow
+		margin-right: 2em		
 		.navigation
-			display: flex
 			flex-direction: row
 			margin: 0
 			padding: 0
 			.nav-links
+				font-weight: 600
 				display: inline-block
 				margin: 0 10px
-				&:after
-					content: ''
-					width: 10px
-					height: 2px
-					background: white
+				+std-transition
 
 // MAIN CONTENT
 .content
 	z-index: $content-index
-	margin-top: -60px
 	.home
 		justify-content: center
 		align-items: center
@@ -91,34 +97,45 @@ $content-index: 100
 		flex-direction: column
 		height: 100vh
 		width: 100%
-		background: grey
+		background: url('../img/cutlery.jpg') center no-repeat
+		background-size: cover
 		.about
 			text-align: center
-			margin-top: auto			
+			margin-top: auto	
+			h1
+				font-size: 8em
+				color: #fff
+				margin: 0
+			h3
+				font-size: 3em
+				color: #fff	
+				margin: 0
+				letter-spacing: 10px
 		.scroll-down
 			margin-top: auto
 			margin-bottom: 4em
 			.wrapper
-				width: 35px
+				width: 30px
 				height: 50px
 				border-radius: 50px
 				justify-content: center
 				align-items: center
-				border: 3px solid #333
-				background-color: #fff
+				border: 3px solid #fff
 				.dot
-					background: #333
+					background: #fff
 					width: 7px
 					height: 7px
 					border-radius: 100%
 					animation: scroll-down 2s infinite
 	.reservations-about
 		.wrapper
+			text-align: center
 			.reservations
 				width: 100%
 				.details
 					width: 30%
 					height: 100%
+					background: #fff
 				.image
 					width: 70%
 					height: 100%
