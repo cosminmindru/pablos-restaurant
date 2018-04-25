@@ -23,8 +23,7 @@ gulp.task('minifyJS', () => {
 	.pipe(minify({
 		ext:{
 			noSource: 'true',
-			src: '.js',
-			min: '.min.js'
+			min: '.js'
 		}
 	}))
 	.pipe(gulp.dest('dist/js'))

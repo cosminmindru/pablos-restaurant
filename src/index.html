@@ -6,7 +6,10 @@
 	<title>Pablo's Restaurant | Cosmin Mindru</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
-	<link href="https://fonts.googleapis.com/css?family=Lato:400,900|Satisfy" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,900|Satisfy" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
 <body>
 	<!-- NAVBAR -->
@@ -14,7 +17,12 @@
 		<div class="nav-logo">
 			<a href="#"><img title="Pablo's Restaurant" src="img/logo.png" alt="Logo"></a>
 		</div>
-		<div class="nav-menu">
+		<div class="menu-btn">
+			<span class="line"></span>
+			<span class="line"></span>
+			<span class="line"></span>
+		</div>
+		<div class="nav-menu ">
 			<ul class="navigation flex regular-font">
 				<li class="nav-links"><a href="#">SHOP</a></li>
 				<li class="nav-links"><a href="#">RECIPES</a></li>
@@ -24,7 +32,9 @@
 			</ul>
 		</div>
 	</nav>
+	<!-- Content -->
 	<section class="content">
+		<!-- Home - Top Section -->
 		<article class="home flex">
 			<div class="about">
 				<h1 class="special-font">Pablo's</h1>
@@ -36,174 +46,184 @@
 					</div>
 				</div>
 		</article>
+		<!-- Reservations - About Section -->
 		<article class="reservations-about flex hover-background">
 			<div class="wrapper flex hover-content">
 				<div class="reservations flex">
-					<div class="details">
-						<h1>Reservations</h1>
-						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, blanditiis.</p>
-						<a href="#">BOOK A TABLE</a>
+					<div class="details flex">
+						<h1 class="special-font">Reservations</h1>
+						<p class="regular-font">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, blanditiis.</p>
+						<a class="cta regular-font" href="#">BOOK A TABLE</a>
 					</div>
 					<div class="image"></div>						
 				</div>
 				<div class="about flex">
-					<div class="details">
-						<h1>About</h1>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium temporibus quam possimus doloremque? Esse laborum pariatur quos fuga maiores voluptas!</p>
+					<div class="details flex">
+						<h1 class="special-font">About</h1>
+						<p class="regular-font">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores ex voluptate voluptatum facilis soluta reiciendis atque optio nobis qui voluptatem provident laborum ducimus alias consequuntur, ut quod nam ipsa repellat?</p>
 					</div>
 					<div class="image"></div>
 				</div>
 			</div>
 		</article>
-		<article class="specialties-title flex big-section-title">
-			<h1>OUR SPECIALTIES</h1>
+		<!-- Specialities Section -->
+		<article class="specialities-title flex big-section-title regular-font">
+			<h1>OUR SPECIALITIES</h1>
 		</article>
-		<article class="specialties-content flex hover-background">
+		<article class="specialities-content flex hover-background">
 			<div class="wrapper flex hover-content">
-				<div class="specialty">
-					<div class="details">
-						<h1>name</h1>
+				<div class="speciality">
+					<div class="details regular-font">
+						<h1 class="title">Croquette</h1>
 						<p>Lorem ipsum dolor sit amet.</p>
-						<h5>price</h5>
+						<h5 class="price">From $11.50</h5>
 					</div>
+					<div class="image one"></div>
 				</div>
-				<div class="specialty">
-					<div class="details">
-						<h1>name</h1>
+				<div class="speciality">
+					<div class="details regular-font">
+						<h1 class="title">Spanish Omelette</h1>
 						<p>Lorem ipsum dolor sit amet.</p>
-						<h5>price</h5>
+						<h5 class="price">From $14.50</h5>
 					</div>
+					<div class="image two"></div>
 				</div>
-				<div class="specialty wrap-down">
-					<div class="details">
-						<h1>name</h1>
+				<div class="speciality reverse">
+					<div class="details regular-font">
+						<h1 class="title">Pisto</h1>
 						<p>Lorem ipsum dolor sit amet.</p>
-						<h5>price</h5>
+						<h5 class="price">From $14.50</h5>
 					</div>
+					<div class="image three"></div>
 				</div>
-				<div class="specialty wrap-down">
-					<div class="details">
-						<h1>name</h1>
+				<div class="speciality reverse">
+					<div class="details regular-font">
+						<h1 class="title">Polbo á feira</h1>
 						<p>Lorem ipsum dolor sit amet.</p>
-						<h5>price</h5>
+						<h5 class="price">From $19.00</h5>
 					</div>
+					<div class="image four"></div>
 				</div>
 			</div>
 		</article>
-		<article class="menu-title flex big-section-title">
+		<!-- Menu Section -->
+		<article class="menu-title flex big-section-title regular-font">
 			<h1>MENU</h1>
 		</article>
 		<article class="menu-content flex">
 			<div class="wrapper">
-				<h1>Menu</h1>
+				<h1 class="special-font">Menu</h1>
 				<div class="aperitives display-list">
-					<h3 class="title">FOOD &amp; APERITIVES</h3>
+					<h3 class="title regular-font">FOOD &amp; APERITIVES</h3>
 					<div class="menu-list flex">
 						<div class="menu-item">
-							<div class="pull-left">
+							<div class="pull-left regular-font">
 								<h3>Churros Con Chocolatee</h3>
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptatibus!</p>
 							</div>
-							<div class="pull-right"><h1>$17</h1></div>
+							<div class="pull-right special-font"><h1>$16</h1></div>
 						</div>
 						<div class="menu-item">
-							<div class="pull-left">
+							<div class="pull-left regular-font">
 								<h3>Paella</h3>
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptatibus!</p>
 							</div>
-							<div class="pull-right"><h1>$13</h1></div>
+							<div class="pull-right special-font"><h1>$12</h1></div>
 						</div>
 						<div class="menu-item">
-							<div class="pull-left">
+							<div class="pull-left regular-font">
 								<h3>Croquetas</h3>
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptatibus!</p>
 							</div>
-							<div class="pull-right"><h1>$17</h1></div>
+							<div class="pull-right special-font"><h1>$13</h1></div>
 						</div>
 						<div class="menu-item flex">
-							<div class="pull-left">
+							<div class="pull-left regular-font">
 								<h3>Patatas Bravas</h3>
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptatibus!</p>
 							</div>
-							<div class="pull-right"><h1>$13</h1></div>
+							<div class="pull-right special-font"><h1>$14</h1></div>
 						</div>
 						<div class="menu-item flex">
-							<div class="pull-left">
+							<div class="pull-left regular-font">
 								<h3>Gazpacho</h3>
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptatibus!</p>
 							</div>
-							<div class="pull-right"><h1>$17</h1></div>
+							<div class="pull-right special-font"><h1>$18</h1></div>
 						</div>
 						<div class="menu-item">
-							<div class="pull-left">
+							<div class="pull-left regular-font">
 								<h3>Empanadas</h3>
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptatibus!</p>
 							</div>
-							<div class="pull-right"><h1>$13</h1></div>
+							<div class="pull-right special-font"><h1>$15</h1></div>
 						</div>
 						<div class="menu-item">
-							<div class="pull-left">
+							<div class="pull-left regular-font">
 								<h3>Jamón Ibérico</h3>
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptatibus!</p>
 							</div>
-							<div class="pull-right"><h1>$17</h1></div>
+							<div class="pull-right special-font"><h1>$17</h1></div>
 						</div>
 					</div>
 				</div>
 				<div class="deserts display-list">
-					<h3 class="title">DESERTS</h3>
+					<h3 class="title regular-font">DESERTS</h3>
 					<div class="menu-list flex">
 						<div class="menu-item">
-							<div class="pull-left">
+							<div class="pull-left regular-font">
 								<h3>Tarta de Santiago</h3>
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptatibus!</p>
 							</div>
-							<div class="pull-right"><h1>$13</h1></div>
+							<div class="pull-right special-font"><h1>$15</h1></div>
 						</div>
 						<div class="menu-item">
-							<div class="pull-left">
+							<div class="pull-left regular-font">
 								<h3>Tarta de Queso</h3>
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptatibus!</p>
 							</div>
-							<div class="pull-right"><h1>$17</h1></div>
+							<div class="pull-right special-font"><h1>$17</h1></div>
 						</div>
 						<div class="menu-item">
-							<div class="pull-left">
+							<div class="pull-left regular-font">
 								<h3>Torrijas</h3>
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptatibus!</p>
 							</div>
-							<div class="pull-right"><h1>$13</h1></div>
+							<div class="pull-right special-font"><h1>$14</h1></div>
 						</div>
 						<div class="menu-item">
-							<div class="pull-left">
+							<div class="pull-left regular-font">
 								<h3>Crema Catalana</h3>
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptatibus!</p>
 							</div>
-							<div class="pull-right"><h1>$17</h1></div>
+							<div class="pull-right special-font"><h1>$17</h1></div>
 						</div>
 						<div class="menu-item">
-							<div class="pull-left">
+							<div class="pull-left regular-font">
 								<h3>Chocolate and Churros</h3>
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptatibus!</p>
 							</div>
-							<div class="pull-right"><h1>$13</h1></div>
+							<div class="pull-right special-font"><h1>$17</h1></div>
 						</div>
 						<div class="menu-item">
-							<div class="pull-left">
+							<div class="pull-left regular-font">
 								<h3>Flan</h3>
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptatibus!</p>
 							</div>
-							<div class="pull-right"><h1>$17</h1></div>
+							<div class="pull-right special-font"><h1>$20</h1></div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</article>
 	</section>
+	<!-- Footer Section -->
 	<footer class="footer flex">
-		<p>Coded with LOVE by <a href="https://www.cosmindev.com/">Cosmin Mindru</a></p>
+		<p class="regular-font">Coded with <i class="fas fa-heart"></i> by <a href="https://www.cosmindev.com/">Cosmin Mindru</a></p>
 	</footer>
 
 
+	<!-- SCRIPTS -->
+	<script src="js/script.js"></script>
 </body>
 </html>
