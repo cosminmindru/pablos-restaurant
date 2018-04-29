@@ -25,3 +25,14 @@ menuBtn.addEventListener('click', () => {
 		navMenuOpen = 1;
 	}
 });
+
+// SCRIPS TO LOAD ONCE THE PAGE IS LOADED
+window.addEventListener('load', () => {
+	// PRELOADER ANIMATION
+	let preloader = document.getElementById('preloader');
+	preloader.classList.add('animated');
+	setTimeout(() => {
+		preloader.classList.remove('shown');
+		theBody.classList.remove('no-scroll');
+	}, 300);
+});

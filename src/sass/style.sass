@@ -404,6 +404,49 @@ $width: 1000px
 		p
 			letter-spacing: 1px
 
+// PRELOADER
+#preloader
+	z-index: 900
+	display: none
+	position: fixed
+	background-color: #000
+	width: 100vw
+	height: 100vh
+	justify-content: center
+	align-items: center
+	&.shown
+		transition: all 0.2s ease-in-out
+		display: flex !important
+		opacity: 1
+	&.animated
+		opacity: 0
+	.spinner 
+		width: 100px
+		height: 100px
+		position: relative
+		margin: 100px auto
+		.double-bounce1, .double-bounce2 
+			width: 100%
+			height: 100%
+			border-radius: 50%
+			background-color: #fff
+			opacity: 0.6
+			position: absolute
+			top: 0
+			left: 0
+			animation: sk-bounce 2.0s infinite ease-in-out
+		.double-bounce2 
+			-webkit-animation-delay: -1.0s
+			animation-delay: -1.0s
+
+@keyframes sk-bounce 
+	0%, 100%  
+		transform: scale(0.0)
+    	-webkit-transform: scale(0.0)
+	50%  
+    	transform: scale(1.0)
+    	-webkit-transform: scale(1.0)
+  
 // ANIMATIONS
 @keyframes scroll-down
 	0%
