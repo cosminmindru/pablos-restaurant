@@ -133,16 +133,23 @@ $width: 1000px
 		a img
 			height: 60px
 	.nav-menu
+		height: 100%
 		.navigation
 			flex-direction: row
+			height: inherit
 			margin: 0
 			padding: 0
 			.nav-links
+				height: inherit
 				font-weight: 600
 				display: inline-block
-				margin: 0 10px
+				margin: auto 10px
 				+std-transition
 				a
+					align-items: center
+					justify-content: center 
+					margin: auto
+					height: 100%
 					color: #fff
 					text-decoration: none
 					&:active, &:hover
@@ -325,6 +332,7 @@ $width: 1000px
 				align-items: center
 				flex-direction: column
 				.nav-links
+					margin: 0
 					font-size: 1.5em
 					height: 75px
 					a
