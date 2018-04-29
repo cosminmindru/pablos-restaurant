@@ -117,6 +117,9 @@ $width: 1000px
 			background: url('../img/polbo.jpg') center no-repeat
 			background-size: cover		
 
+// ScrollReveal Overflow fix
+.about, .hover-content, .big-section-title, .menu-content
+	overflow: hidden !important
 
 // NAVBAR
 .navbar
@@ -231,7 +234,7 @@ $width: 1000px
 			.about
 				width: 100%
 				height: 250px
-				flex-direction: row-reverse
+				flex-direction: row
 				.details
 					justify-content: center
 					align-items: center
@@ -362,7 +365,7 @@ $width: 1000px
 						height: 300px
 				.about
 					flex-wrap: nowrap
-					flex-direction: column
+					flex-direction: column-reverse
 					min-height: 600px
 					.details
 						width: 100%
@@ -415,7 +418,7 @@ $width: 1000px
 	justify-content: center
 	align-items: center
 	&.shown
-		transition: all 0.2s ease-in-out
+		transition: all 0.7s ease-in-out
 		display: flex !important
 		opacity: 1
 	&.animated
