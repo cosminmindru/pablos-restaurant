@@ -1,4 +1,5 @@
 const gulp = require('gulp'),
+	sass = require('gulp-sass'),
 	autoprefixer = require('gulp-autoprefixer'),
 	minify = require('gulp-minify'),
 	imagemin = require('gulp-imagemin'),
